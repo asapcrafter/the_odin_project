@@ -7,6 +7,7 @@ Append Elements:
     [parentNode].removeChild([child])
 */
 
+//Exercise 1..
 const containerTest = document.querySelector('#testContainer');
     const testP = document.createElement('p');
         testP.style.color = 'red';
@@ -29,3 +30,11 @@ const bigBody = document.body; // <body>
     var p = document.createElement('p');
         p.textContent = "ME TOO!";
         div.appendChild(p);
+
+//Exercise 2 (Buttons)..
+const buttonTwo = document.querySelector('#buttonTwo');
+    buttonTwo.onclick = () => alert("Hello, this is the 2nd button");
+const buttonThree = document.querySelector('#buttonThree');
+    buttonThree.addEventListener('click', () => {
+        alert("Hello WW3");
+    });
