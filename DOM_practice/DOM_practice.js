@@ -17,7 +17,15 @@ const containerTest = document.querySelector('#testContainer');
         testH3.textContent = "I'm a blue h3!";
         containerTest.appendChild(testH3);
 
-const bigBody = document.querySelector('#body');
-    const div = document.createElement('div');
-        div.borderStyle
-        bigBody.insertBefore('#testContainer','#body');
+const bigBody = document.body; // <body>
+    var div = document.createElement('div');
+        div.style.borderColor = 'black';
+        div.style.backgroundColor = 'pink';
+        div.textContent = "This is the body";
+        bigBody.insertBefore(div, containerTest);
+    var h1 = document.createElement('h1');
+        h1.textContent = "I'm in a div";
+        div.appendChild(h1);
+    var p = document.createElement('p');
+        p.textContent = "ME TOO!";
+        div.appendChild(p);
