@@ -1,16 +1,23 @@
-const container = document.querySelector('#container');
+/*
+Element Creation:
+    const div = document.createElement('div');
+Append Elements:
+    [parentNode].appendChild([childNode])
+    [parentNode].insertBefore([newNode],[referenceNode])
+    [parentNode].removeChild([child])
+*/
 
-const content = document.createElement('div');
-content.classList.add('content');
+const containerTest = document.querySelector('#testContainer');
+    const testP = document.createElement('p');
+        testP.style.color = 'red';
+        testP.textContent = "Hey I'm red!";
+        containerTest.appendChild(testP);
+    const testH3 = document.createElement('h3');
+        testH3.style.color = 'blue';
+        testH3.textContent = "I'm a blue h3!";
+        containerTest.appendChild(testH3);
 
-container.appendChild(content);
-
-const body = document.body;
-body.append("Hello World", "bye");
-
-const div = document.createElement('div')
-body.append(div);
-div.innerText= "Test the div";
-
-const p = document.p;
-p.append("Hey I'm red!")
+const bigBody = document.querySelector('#body');
+    const div = document.createElement('div');
+        div.borderStyle
+        bigBody.insertBefore('#testContainer','#body');
